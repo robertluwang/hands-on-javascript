@@ -98,8 +98,7 @@ ng serve
 
 Vue.js strikes a balance between simplicity and power, making it a great choice for beginners and experienced developers alike. 
 
-- Install Node.js and npm
-Make sure node.js and npm installed
+- Make sure node.js and npm installed
 
 - Install Vue 
 ```
