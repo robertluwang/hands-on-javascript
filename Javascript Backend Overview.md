@@ -681,4 +681,10 @@ console.log('routes/todos.js/router.get() get all todos:',todos);
 ```
 - Check Network/Response in browser Developer console 
 
+## Conclusion 
+
+In this comprehensive overview of backend development in JavaScript, we've delved into the essential concepts, tools, and practices that power the server-side of web applications. We began by exploring the importance of backend development, its role in handling data, and business logic, and how it interacts with the frontend.  
+
+We took a hands-on approach, building a To-Do List application from scratch using React as frontend, Express.js and MongoDB as backend. We covered the entire development process, from setting up the backend server, defining routes, integrating the database, implementing CRUD operations, to handling errors and connecting it with the frontend.
+
 
