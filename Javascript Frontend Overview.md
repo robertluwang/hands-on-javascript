@@ -68,8 +68,7 @@ export default App;
 
 Angular goes beyond being just a library; it's a complete framework for building robust single-page applications. 
 
-- Install Node.js and npm
-make sure node.js and npm already installed
+- Make sure node.js and npm already installed
 
 - Install Angular CLI
 ```
