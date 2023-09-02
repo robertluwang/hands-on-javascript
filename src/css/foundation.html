@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamCloud</title>
+    <!-- Include Foundation CSS from a CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation.min.css">
+    <style>
+        /* Custom CSS to adjust list marker position */
+        .custom-list {
+            list-style: none;
+            padding-left: 1.5rem; /* Adjust as needed */
+        }
+        .custom-list li::before {
+            content: '•';
+            color: #00bcd4; /* Adjust the color as desired */
+            display: inline-block;
+            width: 1em;
+            margin-left: -1.5rem; /* Adjust to align with list items */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li class="menu-text">DreamCloud</li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="bg-gray-100 py-16">
+        <div class="container text-center">
+            <h1 class="text-4xl font-semibold">Welcome to DreamCloud</h1>
+            <p class="text-gray-600 mt-4">Your dream destination for all things cloud-related.</p>
+            <p class="text-gray-600 mt-4">This is a sample page created using Foundation.</p>
+            <a href="#services" class="mt-8 button">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="container text-center">
+            <h2 class="text-3xl font-semibold">About Us</h2>
+            <p class="text-gray-600 mt-4">We are passionate about making your cloud dreams a reality.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-gray-100 py-16">
+        <div class="container text-center">
+            <h2 class="text-3xl font-semibold">Our Services</h2>
+            <ul class="text-gray-600 mt-4 custom-list">
+                <li>Cloud Hosting</li>
+                <li>Data Security</li>
+                <li>Scalable Solutions</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container text-center">
+            <h2 class="text-3xl font-semibold">Contact Us</h2>
+            <p class="text-gray-600 mt-4">Have questions or need assistance? Reach out to us!</p>
+            <a href="mailto:info@dreamcloud.com" class="mt-8 button">Email Us</a>
+        </div>
+    </section>
+
+    <!-- Include Foundation JavaScript (jQuery is required) from a CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"></script>
+    <script>
+        // Initialize Foundation JavaScript components
+        $(document).foundation();
+    </script>
+</body>
+</html>

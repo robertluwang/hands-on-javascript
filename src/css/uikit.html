@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamCloud</title>
+    <!-- Include UIKit CSS from a CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.28/dist/css/uikit.min.css">
+    <!-- Include a stylish font from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    <style>
+        /* Add custom styles here */
+        body {
+            font-family: 'Raleway', sans-serif;
+        }
+        .menu {
+            background-color: #333;
+            color: #fff;
+        }
+        .menu a {
+            color: #fff;
+            text-transform: uppercase;
+            cursor: pointer; /* Add cursor pointer for menu items */
+        }
+        .menu a:hover {
+            color: #00bcd4;
+        }
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            gap: 20px;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="uk-navbar-container menu uk-navbar" uk-sticky>
+        <div class="uk-container">
+            <a class="uk-navbar-item uk-logo" href="#">DreamCloud</a>
+            <div class="menu-items">
+                <a href="#home" data-item="Home">Home</a>
+                <a href="#about" data-item="About">About</a>
+                <a href="#services" data-item="Services">Services</a>
+                <a href="#contact" data-item="Contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="uk-section uk-section-primary uk-padding-large">
+        <div class="uk-container">
+            <h1 class="uk-heading-hero">Welcome to DreamCloud</h1>
+            <p>Your dream destination for all things cloud-related.</p>
+            <p>This is a sample page created using Tailwind.</p>
+            <a class="uk-button uk-button-secondary" href="#services">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="uk-section">
+        <div class="uk-container">
+            <h2 class="uk-heading-medium">About Us</h2>
+            <p>We are passionate about making your cloud dreams a reality.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="uk-section uk-section-muted">
+        <div class="uk-container">
+            <h2 class="uk-heading-medium">Our Services</h2>
+            <ul class="uk-list uk-list-bullet">
+                <li>Cloud Hosting</li>
+                <li>Data Security</li>
+                <li>Scalable Solutions</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="uk-section">
+        <div class="uk-container">
+            <h2 class="uk-heading-medium">Contact Us</h2>
+            <p>Have questions or need assistance? Reach out to us!</p>
+            <a class="uk-button uk-button-primary" href="mailto:info@dreamcloud.com">Email Us</a>
+        </div>
+    </section>
+
+    <!-- Include UIKit JavaScript (jQuery is required) from a CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.28/dist/js/uikit.min.js"></script>
+</body>
+</html>
+
+
