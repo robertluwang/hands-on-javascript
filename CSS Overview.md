@@ -12,13 +12,23 @@ A CSS framework is a pre-prepared library of CSS files and sometimes JavaScript 
 
 **Bootstrap**: Bootstrap is one of the most popular CSS frameworks in existence. It offers a wide range of features that make frontend development more productive and enjoyable. Bootstrap is fully-featured, customizable, and easy to learn.
 
+https://getbootstrap.com/
+
 **Tailwind CSS**: Tailwind CSS is a utility-first CSS framework that provides a set of pre-defined classes that can be used to style HTML elements. It’s highly customizable and can be used to create complex layouts with ease.
+
+https://tailwindcss.com/
 
 **Bulma**: Bulma is a modern CSS framework that’s known for its simplicity and ease of use. It’s built on Flexbox and provides a wide range of pre-built components that can be used to create beautiful layouts quickly.
 
+https://bulma.io/
+
 **Foundation**: Foundation is a responsive front-end framework that provides a wide range of features for building complex layouts. It’s highly customizable and provides a set of pre-built components that can be used to create beautiful interfaces quickly.
 
+https://get.foundation/
+
 **UIkit**: UIkit is a lightweight and modular front-end framework that provides a wide range of features for building responsive interfaces. It’s highly customizable and provides a set of pre-built components that can be used to create beautiful layouts quickly.
+
+https://getuikit.com/
 
 ## Bootstrap
 
