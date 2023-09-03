@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide-In Animation</title>
+    <style>
+        /* Base styles for the element */
+        .slide-in-element {
+            width: 200px;
+            height: 100px;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+            font-size: 18px;
+            position: relative;
+            left: -100%; /* Start the element outside the viewport */
+            animation: slide-in 1s ease-in-out forwards; /* Apply the animation */
+        }
+
+        /* Keyframes for the slide-in animation */
+        @keyframes slide-in {
+            0% {
+                left: -100%; /* Start position (outside the viewport) */
+            }
+            100% {
+                left: 0; /* End position (slide in to the original position) */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Element to apply the slide-in animation -->
+    <div class="slide-in-element">Slide In</div>
+</body>
+</html>

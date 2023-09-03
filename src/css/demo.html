@@ -7,16 +7,14 @@
     <style>
         /* Basic CSS Syntax */
         h1 {
-            color: rgb(238, 144, 56);
-            font-family: Arial;
-            font-size: 28px;
+            color: blue;
+            font-size: 24px;
         }
 
         /* Color Properties */
         p {
-            color: #7a7878;
-            background-color: #ffffff;
-            font-family: Arial;
+            color: #333;
+            background-color: #f5f5f5;
         }
 
         /* Text Properties */
@@ -32,38 +30,90 @@
             width: 200px;
             height: 100px;
             padding: 20px;
-            border: 2px solid #eea13d;
+            border: 2px solid #000;
             margin: 10px;
-            font-family: Arial;
-            font-size: 20px;
-            color: #afaeac;
         }
 
-        /* Display Property */
+        /* Styling for block-level elements */
         .block-element {
             display: block;
-            font-family: Arial;
-            font-size: 18px;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* Styling for inline-level elements */
+        .inline-element {
+            display: inline;
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 5px;
+            margin: 5px;
         }
 
         /* Position Property */
         .relative-element {
             position: relative;
-            top: 10px;
-            left: 20px;
+            top: 20px;
+            left: 40px;
         }
 
-        /* Flexbox */
-        .flex-container {
+        .flexbox-container {
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            justify-content: center; /* Center items along the main axis */
+            align-items: center; /* Center items along the cross axis */
+            height: 400px; /* Set a fixed height for the container */
+            border: 2px solid #333;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        /* Flex items styles */
+        .flexbox-item {
+            flex: 1; /* Allow items to grow and shrink equally */
+            min-width: 150px; /* Minimum width for items */
+            max-width: 300px; /* Maximum width for items */
+            height: 100px; /* Fixed height for items */
+            margin: 10px; /* Spacing between items */
+            text-align: center;
+            background-color: #3498db;
+            color: #fff;
+            font-weight: bold;
+            display: flex;
+            justify-content: center; /* Center text horizontally */
+            align-items: center; /* Center text vertically */
+        }
+
+        /* Custom styles for specific items */
+        .flexbox-item:nth-child(2n) {
+            background-color: #e74c3c;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            .flexbox-container {
+                flex-direction: column; /* Switch to a column layout on smaller screens */
+            }
         }
 
         /* Grid */
+        /* Define a grid container */
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
+            grid-template-columns: repeat(3, 1fr); /* Create 3 columns with equal width */
+            grid-gap: 20px; /* Add spacing between grid items */
+        }
+
+        /* Style for grid items */
+        .grid-item {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            border: 1px solid #333;
         }
 
         /* Transitions */
@@ -74,7 +124,30 @@
             transition: background-color 0.3s ease-in-out;
         }
         .button:hover {
-            background-color: #d77424;
+            background-color: #e74c3c;
+        }
+
+        .slide-in-element {
+            width: 200px;
+            height: 100px;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+            font-size: 18px;
+            position: relative;
+            left: -100%; /* Start the element outside the viewport */
+            animation: slide-in 1s ease-in-out forwards; /* Apply the animation */
+        }
+
+        /* Keyframes for the slide-in animation */
+        @keyframes slide-in {
+            0% {
+                left: -100%; /* Start position (outside the viewport) */
+            }
+            100% {
+                left: 0; /* End position (slide in to the original position) */
+            }
         }
     </style>
 </head>
@@ -91,29 +164,43 @@
     <div class="box">Box 2</div>
     <div class="box">Box 3</div>
 
-    <!-- Display Property -->
-    <span class="block-element">Block Element</span>
-    <span>Inline Element</span>
+    <!-- Block-level elements -->
+    <div class="block-element">Block Element 1</div>
+    <div class="block-element">Block Element 2</div>
+    <div class="block-element">Block Element 3</div>
+
+    <!-- Inline-level elements -->
+    <span class="inline-element">Inline Element 1</span>
+    <span class="inline-element">Inline Element 2</span>
+    <span class="inline-element">Inline Element 3</span>
 
     <!-- Position Property -->
     <div class="relative-element">Relative Positioning</div>
 
-    <!-- Flexbox -->
-    <div class="flex-container">
-        <div>Item 1</div>
-        <div>Item 2</div>
-        <div>Item 3</div>
+    <!-- Flex container with row layout -->
+    <div class="flexbox-container">
+        <div class="flexbox-item">Item 1</div>
+        <div class="flexbox-item">Item 2</div>
+        <div class="flexbox-item">Item 3</div>
+        <div class="flexbox-item">Item 4</div>
+        <div class="flexbox-item">Item 5</div>
     </div>
 
-    <!-- Grid -->
+    <!-- Grid container with grid items -->
     <div class="grid-container">
-        <div>Grid Item 1</div>
-        <div>Grid Item 2</div>
-        <div>Grid Item 3</div>
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div>
+        <div class="grid-item">Item 5</div>
+        <div class="grid-item">Item 6</div>
     </div>
 
     <!-- Transitions -->
     <button class="button">Hover Over Me</button>
+
+    <!-- Element to apply the slide-in animation -->
+    <div class="slide-in-element">Slide In</div>
 
 </body>
 </html>
