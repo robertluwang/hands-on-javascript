@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Worker Example with Blob URL</title>
+</head>
+<body>
+    <h1>Web Worker Example with Blob URL</h1>
+    
+    <p>Click the button to start a background task:</p>
+    <button onclick="startWorker()">Start Worker</button>
+    <p id="result"></p>
+
+    <script>
+        function startWorker() {
+            const workerCode = `
+                self.addEventListener('message', function(event) {
+                    const message = event.data;
+                    self.postMessage('Worker received: ' + message);
+                });
+            `;
+
+            const blob = new Blob([workerCode], { type: 'application/javascript' });
+            const workerURL = URL.createObjectURL(blob);
+            const worker = new Worker(workerURL);
+
+            worker.postMessage('Hello from the main thread!');
+            
+            worker.onmessage = function(event) {
+                document.getElementById('result').textContent = event.data;
+                URL.revokeObjectURL(workerURL); // Clean up the Blob URL
+            };
+        }
+    </script>
+</body>
+</html>
+

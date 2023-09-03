@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Storage Example</title>
+</head>
+<body>
+    <h1>Web Storage Example</h1>
+    
+    <input type="text" id="inputText" placeholder="Enter a message">
+    <button onclick="saveData()">Save</button>
+    <button onclick="displayData()">Display Saved Data</button>
+
+    <p id="output"></p>
+
+    <script>
+        // Function to save data to localStorage
+        function saveData() {
+            const inputData = document.getElementById('inputText').value;
+            localStorage.setItem('userMessage', inputData);
+            document.getElementById('inputText').value = ''; // Clear input field
+        }
+
+        // Function to display saved data from localStorage
+        function displayData() {
+            const savedData = localStorage.getItem('userMessage');
+            if (savedData) {
+                document.getElementById('output').textContent = 'Saved Message: ' + savedData;
+            } else {
+                document.getElementById('output').textContent = 'No data saved.';
+            }
+        }
+    </script>
+</body>
+</html>

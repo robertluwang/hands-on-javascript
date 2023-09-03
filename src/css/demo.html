@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CSS Website</title>
+    <style>
+        /* Basic CSS Syntax */
+        h1 {
+            color: blue;
+            font-size: 24px;
+        }
+
+        /* Color Properties */
+        p {
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        /* Text Properties */
+        .special-text {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Box Properties */
+        .box {
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            border: 2px solid #000;
+            margin: 10px;
+        }
+
+        /* Display Property */
+        .block-element {
+            display: block;
+        }
+
+        /* Position Property */
+        .relative-element {
+            position: relative;
+            top: 10px;
+            left: 20px;
+        }
+
+        /* Flexbox */
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        /* Transitions */
+        .button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .button:hover {
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <!-- Heading -->
+    <h1>Welcome to My CSS Website</h1>
+
+    <!-- Paragraphs -->
+    <p>This is a simple website demo to showcase CSS concepts.</p>
+    <p class="special-text">Explore our content and styles.</p>
+
+    <!-- Box Model -->
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+
+    <!-- Display Property -->
+    <span class="block-element">Block Element</span>
+    <span>Inline Element</span>
+
+    <!-- Position Property -->
+    <div class="relative-element">Relative Positioning</div>
+
+    <!-- Flexbox -->
+    <div class="flex-container">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid-container">
+        <div>Grid Item 1</div>
+        <div>Grid Item 2</div>
+        <div>Grid Item 3</div>
+    </div>
+
+    <!-- Transitions -->
+    <button class="button">Hover Over Me</button>
+
+</body>
+</html>
