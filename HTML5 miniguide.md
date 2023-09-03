@@ -1,5 +1,7 @@
 # HTML5 miniguide
 
+Copyright © 2023 by Robert Wang
+
 In this miniguide, we'll explore HTML5, the latest version of the Hypertext Markup Language. HTML5 introduces new features and improvements for building modern and interactive web pages. Let's dive in!
 
 ## Table of Contents
